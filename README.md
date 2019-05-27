@@ -9,13 +9,12 @@
 3.使用vue-axios实现实时小说更新<br>  
 4.使用vueX实现小说收藏和删除<br>  
 5.使用local storage实现登录，保留最后浏览历史<br> 
-效果图1：https://cloud-minapp-25198.cloud.ifanrusercontent.com/1hU7vbexi9Djq5tk.gif<br> 
+效果图1：https://cloud-minapp-25198.cloud.ifanrusercontent.com/1hV5M6RTfu8W5zjl.gif<br> 
 效果图2：https://cloud-minapp-25198.cloud.ifanrusercontent.com/1hU7zCkYyXSegO7k.gif<br> 
 效果图3：https://cloud-minapp-25198.cloud.ifanrusercontent.com/1hU808w6wpdbUr2L.gif<br> 
 
-![](http://www.baidu.com/img/bdlogo.gif)  
 
-![](https://cloud-minapp-25198.cloud.ifanrusercontent.com/1hU7vbexi9Djq5tk.gif)
+![](https://cloud-minapp-25198.cloud.ifanrusercontent.com/1hV5M6RTfu8W5zjl.gif)
 
 ![](https://cloud-minapp-25198.cloud.ifanrusercontent.com/1hU7zCkYyXSegO7k.gif)
 
