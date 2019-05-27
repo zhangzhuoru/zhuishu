@@ -11,7 +11,7 @@
 5.使用local storage实现登录，保留最后浏览历史<br> 
 效果图1：https://cloud-minapp-25198.cloud.ifanrusercontent.com/1hV5M6RTfu8W5zjl.gif<br> 
 效果图2：https://cloud-minapp-25198.cloud.ifanrusercontent.com/1hU7zCkYyXSegO7k.gif<br> 
-效果图3：https://cloud-minapp-25198.cloud.ifanrusercontent.com/1hU808w6wpdbUr2L.gif<br> 
+效果图3：https://cloud-minapp-25198.cloud.ifanrusercontent.com/1hV5YANkiXRojEOe.gif<br> 
 
 
 ![](https://cloud-minapp-25198.cloud.ifanrusercontent.com/1hV5M6RTfu8W5zjl.gif)
@@ -20,4 +20,4 @@
 
 
 
-![](https://cloud-minapp-25198.cloud.ifanrusercontent.com/1hU808w6wpdbUr2L.gif)
+![](https://cloud-minapp-25198.cloud.ifanrusercontent.com/1hV5YANkiXRojEOe.gif)
