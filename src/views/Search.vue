@@ -14,18 +14,18 @@
 
 			<div class='layer'>
 				<div class='title hot-div '>搜索热词</div>
-				<div class='change' data-type='hot' @click='changehot(hot)'>换一批</div>
+				<div class='change' data-type='hot' @click='changegoods(goods)'>换一批</div>
 				<div class='word-list'>
-					<div class='word-item' v-for='(item,index) in hot' :key='index' @click='clickhot(item.word)'>
-						{{item.word}}
+					<div class='word-item' v-for='(item,index) in goods' :key='index' @click='clickhot(item)'>
+						{{item}}
 					</div>
 				</div>
 			</div>
 			<div class='layer'>
 				<div class='title hot-div '>热门推荐</div>
-				<div class='change' data-type='recommend' @click='changegoods(goods)'>换一批</div>
+				<div class='change' data-type='recommend' @click='changehot(hot)'>换一批</div>
 				<div class='word-list'>
-					<div class='word-item' v-for='(item,index) in goods' :key='index' @click='clickhot(item)'>
+					<div class='word-item' v-for='(item,index) in hot' :key='index' @click='clickhot(item)'>
 						{{item}}
 					</div>
 				</div>
@@ -65,7 +65,7 @@
 				val: [],
 				recVal: [],
 				hot: [],
-				goods: [],
+				goods: ["总裁", "废柴", "穿越", "重生", "老公"],
 				schkey: [],
 				show: false
 			};
@@ -73,26 +73,36 @@
 
 		created() {
 			//https://novel.juhe.im/search-hotwords
-			const hoturl = 'https://novel.juhe.im/search-hotwords'
+			// const hoturl = 'https://novel.juhe.im/search-hotwords'
+
+			// this.axios.get(hoturl).then(response => {
+			// 	this.val = response.data.searchHotWords
+			// 	this.hot = this.random(10, this.val, 0)
+			// 	console.log('that.url', this.random(10, this.val, 0))
+
+			// }, err => {
+			// 	alert('response.data', err)
+			// })
+			const hoturl = 'http://b.zhuishushenqi.com/book/hot-word'
 
 			this.axios.get(hoturl).then(response => {
-				this.val = response.data.searchHotWords
-				this.hot = this.random(10, this.val, 0)
-				console.log('that.url', this.random(10, this.val, 0))
+				this.val = response.data.hotWords
+				this.hot = this.random(6, this.val, 0)
+				console.log('that.url', this.random(6, this.val, 0))
 
 			}, err => {
 				alert('response.data', err)
 			})
-			const goodsurl = 'https://novel.juhe.im/hot-books'
+			// const goodsurl = 'https://novel.juhe.im/hot-books'
 
-			this.axios.get(goodsurl).then(response => {
-				this.recVal = response.data.hotWords
-				this.goods = this.random(6, this.recVal, 0)
-				console.log('that.url', this.random(6, this.recVal, 0))
+			// this.axios.get(goodsurl).then(response => {
+			// 	this.recVal = response.data.hotWords
+			// 	this.goods = this.random(6, this.recVal, 0)
+			// 	console.log('that.url', this.random(6, this.recVal, 0))
 
-			}, err => {
-				alert('response.data', err)
-			})
+			// }, err => {
+			// 	alert('response.data', err)
+			// })
 			//获取用户id
 			var userLogin = localStorage.getItem('userLogin');
 			this.userId = userLogin == null ? '' : JSON.parse(userLogin).userId;
@@ -170,10 +180,10 @@
 				});
 			},
 			changegoods(arr) {
-				this.goods = this.random(6, arr, 0)
+				this.goods = this.random(4, arr, 0)
 			},
 			changehot(arr) {
-				this.hot = this.random(10, arr, 0)
+				this.hot = this.random(6, arr, 0)
 			},
 			sc(){
 				this.searchHistory[this.userId] = [];

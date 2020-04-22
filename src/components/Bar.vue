@@ -5,7 +5,7 @@
 			<span class="bar-text">返回</span>
 		</div>
 		<div class="bar-z-heard">{{title.title}}</div>
-		<div class="bar-r-heard" @click="gohome">首页</div>
+		<div class="bar-r-heard matop" @click="gohome">首页</div>
 	</div>
 </template>
 
@@ -118,5 +118,8 @@
 		width: 3rem;
 		float: right;
 		margin-right: .3rem;
+	}
+	.matop{
+		margin-top: 0;
 	}
 </style>

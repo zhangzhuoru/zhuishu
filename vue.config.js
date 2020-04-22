@@ -1,4 +1,4 @@
-const url='http://api.zhuishushenqi.com/cats/lv2/statistics'
+// const url='http://api.zhuishushenqi.com/cats/lv2/statistics'
 //http://novel.juhe.im/search?keyword=遮天
 
 module.exports = {
@@ -19,5 +19,7 @@ module.exports = {
         }
       }
     }
-  }
+  },
+  lintOnSave:false,
+  baseUrl:'.'
 }

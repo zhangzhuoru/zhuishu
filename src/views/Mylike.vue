@@ -6,7 +6,7 @@
 				<span class="bar-text">返回</span>
 			</div>
 			<div class="bar-z-heard">我的收藏</div>
-			<div class="bar-r-heard" @click="gosc">编辑</div>
+			<div class="bar-r-heard matop" @click="gosc">编辑</div>
 		</div>
 		<section class="empty" v-if='lookHistory[userId].findIndex( fruit => fruit.like === true )==-1'>
 			<router-link :to="{ name: 'fenlei' }">
@@ -230,5 +230,8 @@
 	
 	.like-box {
 		background-color: #FFF;
+	}
+	.matop{
+		margin-top: 0;
 	}
 </style>

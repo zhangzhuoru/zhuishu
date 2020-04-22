@@ -12,7 +12,7 @@
 				<span class="read-heard-text">返回</span>
 			</div>
 			<div class="btn-mulus-heard" @click="look">{{title}}</div>
-			<div class="btn-mulu-r-heard" @click="gohome">首页</div>
+			<div class="btn-mulu-r-heard matop" @click="gohome">首页</div>
 		</div>
 		<!-- 目录顶部 -->
 
@@ -714,5 +714,8 @@
 		line-height: 1.6rem;
 		padding-left: 1.0rem;
 		top: -2rem;
+	}
+	.matop{
+		margin-top: 0;
 	}
 </style>
